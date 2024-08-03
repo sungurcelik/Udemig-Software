@@ -1,0 +1,181 @@
+:root {
+  --main-color: #669cf5;
+  --bg-color: #35424a;
+}
+
+body {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden; /*Taşmayı önler, taşan kısım altta kalır*/
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--bg-color);
+  color: #fff;
+  min-height: 70px;
+  padding-top: 30px;
+  border-bottom: 3px solid var(--main-color);
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header li {
+  float: left;
+  list-style-type: none;
+  display: inline;
+  padding: 0 20px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+#showcase {
+  background: url(img/showcase.jpg) no-repeat 0 -400px;
+  min-height: 400px;
+  text-align: center;
+  color: #fff;
+}
+
+#showcase h1 {
+  font-size: 55px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+#newsletter {
+  background-color: var(--bg-color);
+  color: #fff;
+  padding: 15px;
+}
+
+#newsletter h1 {
+  float: left;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+
+#newsletter input {
+  height: 25px;
+  width: 250px;
+  padding: 4px;
+}
+
+.button-1 {
+  height: 40px;
+  background: var(--main-color);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0 20px;
+}
+
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+#boxes .box img {
+  width: 90px;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  background: var(--main-color);
+  color: #fff;
+  text-align: center;
+}
+
+.dark {
+  background-color: var(--bg-color);
+  padding: 15px;
+  color: #fff;
+  margin: 10px 0 10px 0;
+}
+
+#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+#main-col {
+  float: left;
+  width: 60%;
+}
+
+#sidebar .quote input,
+#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+#services li {
+  background-color: #e6e6e6;
+  border: #ccc solid 1px;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  #main-col,
+  #sidebar {
+    text-align: center;
+    width: 100%;
+    float: none;
+  }
+}
